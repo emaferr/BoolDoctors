@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\User;
+use App\Review;
+use Faker\Generator as Faker;
+
+class ReviewSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run(Faker $faker)
+    {
+    }
+}

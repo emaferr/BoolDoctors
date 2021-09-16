@@ -1,0 +1,150 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    background-color: #ffffff;
+}
+
+textarea{
+  width: 100%;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+  }
+  .text-up{
+    color:#ffffff !important;
+  }
+  
+  .padding-top{
+    padding-top: 7rem;
+  }
+  
+  .navbar{
+    transition: background-color 0.4s ease-out;
+    background: -webkit-linear-gradient(to right, #45BB67, #7db88e, #45BB67) !important; /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #45BB67, #7db88e, #45BB67) !important;
+  }
+  
+  .bg-scrolling{
+    transition: background-color 0.4s ease-out;
+    background: -webkit-linear-gradient(to right, #45BB67, #7db88e, #45BB67) !important; /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #45BB67, #7db88e, #45BB67) !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+  }
+  
+  
+  .card-carousel {
+      position: relative;
+      margin: 0 auto 0 auto;
+      padding: 0;
+      max-width: 220px;
+      max-width: 100%;
+      height: 450px;
+      perspective: 2000px;
+      perspective-origin: top;
+      .button-spin {
+        position: absolute;
+        top: 50%;
+        border: 0 none;
+        background-color: transparent;
+        cursor: pointer;
+        font-family: "Open Sans";
+        font-weight: 800;
+        padding: 10px 16px;
+        text-shadow: 1px 1px 4px rgba(0, 54, 90, .5);
+        &:hover {
+          box-shadow: 0px 4px 4px 4px rgba(0, 54, 90, .15);
+        }
+        &:active {
+          box-shadow: none;
+        }
+      }
+      .button-spin.counterclockwise {
+        left: 10px;
+        font-size: 1.5rem;
+        color: $bgreen;
+      }
+      .button-spin.clockwise {
+        right: 10px;
+        font-size: 1.5rem;
+        color: $bgreen;
+      }
+      .inner-carousel {
+        position: relative;
+        width: 225px;
+        margin: 0 auto;
+        top: 80px;
+        transform-style: preserve-3d;
+        //border: 1px solid blue;
+        > div {
+          position: absolute;
+          margin: 0 auto;
+          padding: 20px;
+          width: 220px;
+          height: 320px;
+          opacity: 1;
+          background-color: #fff;
+          color: #000;
+          border-radius: 10px;
+          transition: all .5s ease-out;
+          z-index: 1;
+          box-shadow: 0px 10px 10px 10px rgba(0, 54, 90, .15);
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            opacity: .6;
+            background-color: #ddd;
+            z-index: 1;
+          }
+          &.counterclockwise:after,
+          &.clockwise:after {
+            opacity: .4;
+            cursor: pointer;
+          }
+          &.front:after {
+            content: none;
+          }
+          &.front {
+              background: $bgreen;  /* fallback for old browsers */
+              background: -webkit-linear-gradient(to right, $bgreen, $blgreen, $bgreen);  /* Chrome 10-25, Safari 5.1-6 */
+              background: linear-gradient(to right, $bgreen, $blgreen, $bgreen);
+            color: #fff;
+            a {
+              box-shadow: 0px 5px 5px 5px rgba(0, 54, 90, .15);
+              &:hover,
+              &:focus {
+                border: 2px solid #48CFAD;
+                padding: 5px 0;
+              }
+              &:active {
+                box-shadow: none;
+              }
+            }
+          }
+          a {
+            position: absolute;
+            text-align: center;
+            bottom: 30px;
+            display: block;
+            width: 180px;
+            border: 1px solid #c9c9c9;
+            border-radius: 16px;
+            padding: 6px 0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #000;
+            text-decoration: none;
+            background-color: #fff;
+            box-shadow: 0px 5px 8px 3px rgba(0, 54, 90, .10);
+          }
+        }
+      }
+    }
+

@@ -1,0 +1,45 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "partials/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// FontAwesome
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+//Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+// Rules
+@import "partials/rules";
+
+// Header
+@import "partials/header";
+
+// HomePage
+@import "partials/homepage";
+
+// Dashboard
+@import "partials/dashboard";
+
+// Edit
+@import "partials/edit";
+
+// Sponsors
+@import "partials/sponsors";
+
+@import "partials/search";
+
+// forms
+@import "partials/forms";
+
+@import "partials/show";
+
+// Footer
+@import "partials/footer";
+
+
+
